@@ -31,4 +31,26 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+  overrides: [
+    {
+      files: ['./server/*.ts'],
+      env: { node: true },
+      extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/strict-type-checked',
+        'plugin:@typescript-eslint/stylistic-type-checked',
+        'plugin:prettier/recommended',
+      ],
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        project: ['./tsconfig.server.json'],
+        tsconfigRootDir: __dirname,
+      },
+      rules: {
+        '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+      },
+    },
+  ],
 }
