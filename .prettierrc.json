@@ -1,0 +1,9 @@
+{
+  "semi": false,
+  "singleQuote": true,
+  "quoteProps": "consistent",
+  "plugins": ["prettier-plugin-organize-imports", "prettier-plugin-tailwindcss"],
+  "organizeImportsSkipDestructiveCodeActions": true,
+  "tailwindConfig": "./tailwind.config.ts",
+  "tailwindFunctions": ["cn"]
+}
