@@ -8,7 +8,7 @@ function TextArea({ className, ...props }: TextAreaProps) {
     <textarea
       className={cn(['min-h-[80px] rounded-md border p-2', className])}
       {...props}
-    ></textarea>
+    />
   )
 }
 

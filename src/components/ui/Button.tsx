@@ -11,7 +11,7 @@ function Button({ className, ...props }: ButtonProps) {
         className,
       ])}
       {...props}
-    ></button>
+    />
   )
 }
 
