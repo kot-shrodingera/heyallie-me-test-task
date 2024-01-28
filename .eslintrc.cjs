@@ -31,6 +31,11 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   overrides: [
     {
       files: ['./server/*.ts'],
