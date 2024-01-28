@@ -5,7 +5,7 @@ import Button from './ui/Button'
 import TextArea from './ui/TextArea'
 
 type ChatProps = {
-  className: string
+  className?: string
 }
 
 type Status = 'openned' | 'closed'
